@@ -97,7 +97,7 @@ class TrainOREvaluate(object):
         _, test_set = mnist()
     
         criterion = nn.NLLLoss()
-        optimizer = optim.Adam(model.parameters(), lr=0.003)
+        
         accuracy = []
         with torch.no_grad():
             for images, labels in test_set:
